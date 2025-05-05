@@ -20,7 +20,7 @@
                                 <span class="sparkle">✨</span>
                             </h1>
                             <p class="hero_text">
-                                Jadikan inspirasimu sebuah mahakarya dengan AI canggih.
+                                Jadikans inspirasimu sebuah mahakarya dengan AI canggih.
                                 Tanpa perlu studio mahal, cukup unggah ide musikmu, dan
                                 biarkan AI kami menyulapnya menjadi melodi artistik serta
                                 aransemen profesional dalam hitungan menit.

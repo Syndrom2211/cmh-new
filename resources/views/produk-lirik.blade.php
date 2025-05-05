@@ -55,7 +55,7 @@
                             'cta' => 'Pesan Sekarang',
                             'rating' => 'Telah dipesan sebanyak: ',
                             'currency' => 'Rp',
-                            'price' => 45000,
+                            'price' => 55000,
                             'features' => ['Revisi Tidak Terbatas', 'Jenis file WAV & MP3', 'Durasi maksimal. 5 menit'],
                             'category' => 'lyric',
                         ]
