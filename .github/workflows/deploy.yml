@@ -1,0 +1,25 @@
+name: Deploy to CPanel
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: FTP Upload
+      uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      with:
+        server: ${{ secrets.FTP_SERVER }}       # Alamat FTP server
+        username: ${{ secrets.FTP_USERNAME }}   # Username FTPS
+        password: ${{ secrets.FTP_PASSWORD }}   # Password FTP
+        local-dir: ./                          # Folder lokal yang ingin kamu deploy
+        server-dir: /public_html/               # Direktori di server tempat file akan diupload
+        port: ${{ secrets.FTP_PORT }}           # Port FTP (opsional, jika diperlukan)
+        protocol: ftp                         # Protocol (opsional, jika diperlukan)
+
