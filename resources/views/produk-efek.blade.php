@@ -72,7 +72,7 @@
                             'cta' => 'Pesan Sekarang',
                             'rating' => 'Telah dipesan sebanyak: ',
                             'currency' => 'Rp',
-                            'price' => 65000,
+                            'price' => 55000,
                             'features' => [
                                 'Revisi Tidak Terbatas',
                                 'Jenis file WAV & MP3',

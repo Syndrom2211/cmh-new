@@ -24,7 +24,7 @@
             </a>
           </div>
           <div class="social mt-3">
-            <font color="#fff">Follow us on</font> <i class="fa-brands fa-instagram"></i>
+            <font color="#fff">Follow us on</font> <a target="_blank" href="https://www.instagram.com/yukmaridotcom/"><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
 
