@@ -1,0 +1,166 @@
+:root {
+    --background: #0e1117;
+    --heading: #f2f2f2;
+    --card: #1c1f26;
+    --pink: #ff007f;
+    --text: #a1a1b0;
+    --shadow: 0px 4px 12px rgba(255, 0, 127, 0.4);
+}
+
+.header_section {
+    background-color: var(--background);
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    padding: 15px 0;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.custom_nav-container {
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: var(--heading) !important;
+    font-size: 2.5rem;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 5px 0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--pink) !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.dropdown-menu {
+    background: var(--background) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    min-width: 200px;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-item {
+    color: var(--heading) !important;
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    font-family: "Rajdhani", sans-serif;
+    background: var(--background) !important;
+    font-weight: 500;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:active {
+    background: var(--background) !important;
+    color: var(--pink) !important;
+}
+
+/* Memastikan dropdown tetap terlihat saat aktif */
+.dropdown-menu.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+#languageButton {
+    background: transparent;
+    border: 2px solid var(--pink);
+    color: var(--heading);
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Rajdhani", sans-serif;
+    transition: all 0.3s ease;
+    margin-left: 15px;
+}
+
+#languageButton:hover {
+    background: var(--pink);
+    color: white;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+@media (max-width: 991px) {
+    .custom_nav-container {
+        padding: 0 1rem;
+    }
+
+    .navbar-nav {
+        padding: 0.5rem 0;
+    }
+
+    .nav-item {
+        margin: 5px 0;
+    }
+
+    .dropdown-menu {
+        background: var(--background) !important;
+        border: none;
+        padding: 0;
+        margin-top: 0;
+        box-shadow: none;
+    }
+
+    .dropdown-item {
+        padding: 0.5rem 1rem;
+        color: var(--heading) !important;
+        background: var(--background) !important;
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:focus,
+    .dropdown-item:active {
+        background: var(--background) !important;
+        color: var(--pink) !important;
+    }
+}

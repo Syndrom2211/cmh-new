@@ -1,0 +1,279 @@
+:root {
+    --background: #0e1117;
+    --heading: #f2f2f2;
+    --card: #1c1f26;
+    --pink: #ff007f;
+    --text: #a1a1b0;
+    --shadow: 0px 4px 12px rgba(255, 0, 127, 0.4);
+}
+
+.contact_section {
+    margin-top: 100px;
+}
+
+.contact-us {
+    background: var(--background);
+    padding-top: 200px;
+    padding-bottom: 60px;
+    color: var(--heading);
+    min-height: 100vh;
+    position: relative;
+    font-family: "Rajdhani", sans-serif;
+    z-index: 1;
+}
+
+.contact-us h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    color: var(--heading);
+    position: relative;
+    font-family: "Rajdhani", sans-serif !important; 
+}
+
+.heading_container {
+    padding-top: 50px;
+    margin-bottom: 2rem;
+}
+
+.contact-us form {
+    background-color: var(--card);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.contact-us form:hover {
+    transform: translateY(-5px);
+}
+
+/* Label Form */
+.contact-us label {
+    color: var(--heading);
+    margin-bottom: 0.5rem;
+    display: block;
+    font-weight: 500;
+}
+
+/* Input Form */
+.contact-us input,
+.contact-us textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--text);
+    border-radius: 8px;
+    background-color: var(--card);
+    color: var(--heading);
+    transition: all 0.3s ease;
+}
+
+.contact-us input:focus,
+.contact-us textarea:focus {
+    outline: none;
+    border-color: var(--pink);
+    box-shadow: 0 0 0 3px rgba(255, 0, 127, 0.25);
+}
+
+.contact-us input::placeholder,
+.contact-us textarea::placeholder {
+    color: var(--text);
+    font-style: italic;
+}
+
+.custom-input {
+    border-color: var(--text) !important;
+}
+
+.custom-input:focus {
+    border-color: var(--pink) !important;
+    box-shadow: 0 0 0 3px rgba(255, 0, 127, 0.25) !important;
+    background: var(--card) !important;
+    color: var(--heading) !important;
+}
+
+.contact-info {
+    background: var(--card);
+    padding: 2rem;
+    border-radius: 12px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.contact-info h4 {
+    color: var(--pink);
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.contact-info h4 i {
+    margin-right: 0.5rem;
+    color: var(--pink);
+}
+
+.contact-info p {
+    color: var(--text);
+    margin: 0;
+    line-height: 1.6;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+.p-alamat {
+    font-size: 0.9rem !important;
+    line-height: 1.6;
+    text-align: center !important;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.recaptcha-container {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+/* Tombol Submit */
+.cta-support {
+    width: 100%;
+    background-color: var(--pink);
+    color: var(--heading);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.cta-support:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+    background-color: var(--pink);
+}
+
+.cta-support:disabled {
+    background-color: var(--text);
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Error Message */
+.error-message {
+    background: #ff4d4d;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-us {
+        padding: 80px 0 40px;
+    }
+
+    .contact-us h2 {
+        font-size: 2rem;
+    }
+
+    .contact-info {
+        margin-bottom: 2rem;
+    }
+
+    .contact-us form {
+        padding: 1.5rem;
+    }
+}
+
+.contact-us .text-center h1 {
+    padding-top: 50px;
+    color: var(--heading);
+    font-family: "Rajdhani", sans-serif;
+}
+
+.contact-us .cta-support:disabled {
+    background-color: #cccccc; /* Warna abu-abu saat disabled */
+    color: var(--text);
+    cursor: not-allowed; /* Ubah kursor menjadi not-allowed */
+}
+
+.contact-info h4 {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: var(--heading);
+    font-family: "Rajdhani", sans-serif;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Tombol Submit */
+.contact-us .cta-support {
+    background-color: var(--background);
+    color: var(--heading);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-us .cta-support:hover {
+    background-color: var(--pink); /* Warna hover yang sedikit lebih gelap */
+    color: var(--background);
+}
+
+.contact-info-section {
+    margin-top: 4rem;
+}
+
+.contact-info-section .contact-info {
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.contact-info-section .col-md-4 {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .contact-info-section {
+        margin-top: 2rem;
+    }
+    
+    .contact-info-section .contact-info {
+        margin-bottom: 1.5rem;
+    }
+}
+

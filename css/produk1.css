@@ -1,0 +1,130 @@
+:root {
+    --background: #0e1117;
+    --heading: #f2f2f2;
+    --card: #1c1f26;
+    --pink: #ff007f;
+    --text: #a1a1b0;
+    --shadow: 0px 4px 12px rgba(255, 0, 127, 0.4);
+}
+
+.produk-lirik {
+    background-color: var(--background);
+}
+
+.lirik-hero {
+    background-color: var(--background);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.lirik-hero::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/Frame1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.lirik-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 4rem;
+}
+
+.lirik-content {
+    max-width: 600px;
+    text-align: left;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+}
+
+.lirik-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--heading);
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    font-family: "Rajdhani" !important;
+    text-align: left;
+}
+
+.lirik-highlight {
+    color: var(--pink);
+    font-weight: bold;
+}
+
+.lirik-icon {
+    font-size: 3rem;
+    display: inline-block;
+    margin-left: 0.5rem;
+    animation: instrumentSwing 2s ease-in-out infinite;
+}
+
+.lirik-text {
+    font-size: 1.2rem;
+    color: var(--text);
+    margin-bottom: 3rem;
+    font-style: italic;
+    max-width: 500px;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 1.6;
+    font-family: "inter" !important;
+    text-align: left;
+}
+
+.lirik-btn {
+    background: var(--background);
+    color: var(--heading);
+    border: 2px solid var(--pink);
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    align-self: flex-start;
+}
+
+.lirik-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+    color: var(--heading);
+    background: var(--pink);
+    border: 2px solid var(--pink);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .lirik-container {
+        padding: 0 2rem;
+    }
+
+    .lirik-title {
+        font-size: 2.5rem;
+    }
+
+    .lirik-text {
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .lirik-btn {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+}

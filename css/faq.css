@@ -1,0 +1,125 @@
+:root {
+    --background: #0e1117;
+    --heading: #f2f2f2;
+    --card: #1c1f26;
+    --pink: #ff007f;
+    --text: #a1a1b0;
+    --shadow: 0px 4px 12px rgba(255, 0, 127, 0.4);
+}
+
+.faq {
+    padding: 20px 0;
+    background-color: var(--background);
+}
+
+.h2-faq {
+    margin-top: 50px;
+    color: var(--heading);
+    font-family: "Rajdhani", sans-serif;
+    font-size: 2.5rem;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.h2-faq-wrapper {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.h2-faq-wrapper:hover .faq-underline {
+    width: 110px;
+}
+
+.faq-title-text {
+    display: block;
+}
+
+.faq-underline {
+    display: block;
+    height: 4px;
+    width: 80px;
+    margin: 0.5rem auto 0;
+    background: var(--pink);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.faq-divider {
+    border-top: 1px solid var(--pink);
+    margin: 0.5rem 0 1rem;
+}
+
+.accordion-item {
+    color: var(--text);
+    border-radius: 0.25rem;
+    margin-bottom: 1px;
+}
+
+.accordion-header {
+    padding: 1rem 1.25rem;
+    background-color: var(--card);
+    color: var(--heading);
+    border-bottom: 0px 4px 12px rgba(255, 0, 127, 0.4);
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    margin-left: 1rem;
+}
+
+.accordion-body {
+    padding: 0.75rem 1.25rem;
+    background-color: var(--card);
+    margin-bottom: 1px;
+    color: var(--heading);
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease; /* Smooth transition for opacity and max-height */
+}
+
+.shadow-sm {
+    box-shadow: var(--shadow) !important;
+    margin-bottom: 20px;
+}
+
+.g-4 > .col {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+}
+
+.pt-5 {
+    padding-top: 2rem !important;
+}
+
+.row-cols-lg-2 > * {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.row-cols-1 > * {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+@media (max-width: 991.98px) {
+    .row-cols-lg-2 > * {
+        width: 100%;
+    }
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}

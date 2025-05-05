@@ -1,0 +1,206 @@
+:root {
+    --background: #0e1117;
+    --heading: #f2f2f2;
+    --card: #1c1f26;
+    --pink: #ff007f;
+    --text: #a1a1b0;
+    --shadow: 0px 4px 12px rgba(255, 0, 127, 0.4);
+}
+
+.portfolio-section {
+    background-color: var(--background);
+    color: var(--heading);
+    padding: 3rem 0;
+    position: relative;
+    overflow: hidden;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.portfolio-section .section-title {
+    text-align: center;
+    color: var(--heading);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.portfolio-section .section-title img {
+    width: 25px;
+    height: 25px;
+    filter: drop-shadow(1px 2px 3px #00ff80) brightness(1) invert(1);
+}
+
+.portfolio-section .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--pink);
+    transition: width 0.3s ease;
+}
+
+.portfolio-section .section-title:hover::after {
+    width: 120px;
+}
+
+.portfolio-section .highlight {
+    position: relative;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--heading);
+    font-family: "Rajdhani", sans-serif;
+    font-size: 2.5rem;
+}
+
+.portfolio-card {
+    background-color: var(--card) !important;
+    color: var(--heading);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border: none !important;
+    border-radius: 12px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.portfolio-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--pink);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-card:hover::after {
+    transform: scaleX(1);
+}
+
+.portfolio-card .card-body {
+    padding: 1.5rem;
+}
+
+.portfolio-card .card-title {
+    color: var(--heading);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.portfolio-card .card-text {
+    color: var(--text);
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.portfolio-card .genre {
+    color: var(--pink);
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+.portfolio-section {
+    position: relative;
+    padding: 3rem 0;
+}
+
+.portfolio-section .container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.portfolioSwiper {
+    width: 100%;
+    padding: 20px 0;
+    position: relative;
+}
+
+.swiper-slide {
+    height: auto;
+}
+
+/* Custom navigation buttons */
+.custom-swiper-button-prev,
+.custom-swiper-button-next {
+    width: 45px;
+    height: 45px;
+    background-color: var(--pink);
+    border-radius: 50%;
+    color: var(--heading);
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.custom-swiper-button-prev {
+    left: -80px; /* Posisi jauh di luar container */
+}
+
+.custom-swiper-button-next {
+    right: -80px; /* Posisi jauh di luar container */
+}
+
+.custom-swiper-button-prev i,
+.custom-swiper-button-next i {
+    font-size: 18px;
+    color: var(--heading);
+}
+
+.custom-swiper-button-prev:hover,
+.custom-swiper-button-next:hover {
+    background-color: var(--pink);
+    opacity: 0.8;
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Portfolio card styling */
+.portfolio-card {
+    background-color: var(--card);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 0 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Memastikan background tetap gelap di seluruh halaman */
+html, body {
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.hero_area {
+    background-color: var(--background);
+}

@@ -1,0 +1,113 @@
+:root {
+    --background: #0e1117;
+    --heading: #f2f2f2;
+    --card: #1c1f26;
+    --pink: #ff007f;
+    --text: #a1a1b0;
+    --shadow: 0px 4px 12px rgba(255, 0, 127, 0.4);
+}
+
+.price-list {
+    padding: 3rem 1.5rem;
+    background-color: var(--background);
+    font-family: "Rajdhani", sans-serif;
+}
+
+.price-list-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-family: "Rajdhani", sans-serif;
+    color: var(--heading);
+}
+
+.price-list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.price-card {
+    /* border: 1px solid #ddd; */
+    border-radius: 12px;
+    padding: 1.5rem;
+    background: var(--card);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    /* max-width: 70%; */
+    margin: auto;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.price-card-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.price-feature {
+    position: relative;
+    padding-left: 1.8rem;
+    margin-bottom: 0.75rem;
+    color: #fff;
+    font-size: 0.95rem;
+}
+
+.price-feature::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--pink); /* Hijau untuk ceklis */
+    font-weight: bold;
+}
+
+.price-card-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+/* .price-card-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: var(--pink);
+} */
+
+.price-card-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--heading);
+}
+
+.price-card-form {
+    width: 100%;
+}
+
+.price-card-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #0e1117;
+    border: none;
+    border-radius: 8px;
+    color: var(--heading);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.price-card-button:hover {
+    background-color: var(--pink);
+    color: var(--background);
+}
